@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <label for="tc">Tipo de cambio</label>
+        <input type="text" id="tc" v-model="tc" placeholder="Tipo de cambio"><br>
+        <label for="num">Monto</label>
+        <input type="number" v-model="monto" id="num">
+        <p>{{tc * monto}}</p>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                tc: 6.96,
+                monto: 0
+            }
+        })
+    </script>    
+</body>
+</html>
