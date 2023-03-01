@@ -11,11 +11,15 @@
 <body>
     <div id="app">
         <contador></contador>
+        <input type="text" v-model="titulo">
     </div>
     <script>
         var app = new Vue({
-            el: '#app'
+           el: '#app',
+           data: {
+            titulo: "gatos"
+           } 
         })
     </script>
 </body>
-</html> 
+</html>
